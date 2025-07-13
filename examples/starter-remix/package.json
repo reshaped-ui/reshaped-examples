@@ -17,7 +17,7 @@
     "isbot": "4",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "reshaped": "3.6.0-canary.5"
+    "reshaped": "3.6.3"
   },
   "devDependencies": {
     "vite": "5.3.3",

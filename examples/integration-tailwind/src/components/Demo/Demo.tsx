@@ -32,8 +32,6 @@ const Demo = () => {
           <Button color="primary" variant="outline" onClick={invertColorMode}>
             Invert color mode
           </Button>
-
-          <MenuItem onClick={() => {}}>Hello</MenuItem>
         </View>
       </Container>
     </View>

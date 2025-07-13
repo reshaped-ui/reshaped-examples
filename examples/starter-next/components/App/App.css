@@ -1,3 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+}
+
+@import "reshaped/themes/slate/tailwind.css";

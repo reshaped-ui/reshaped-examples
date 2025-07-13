@@ -6,7 +6,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-rs-theme="reshaped" data-rs-color-mode="light">
+    <html lang="en" data-rs-theme="slate" data-rs-color-mode="light">
       <body>
         <App>{children}</App>
       </body>

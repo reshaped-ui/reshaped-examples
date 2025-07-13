@@ -1,9 +1,10 @@
-const { config } = require("reshaped/config/postcss");
+import { config } from "reshaped/config/postcss";
 
-module.exports = {
+const output = {
   plugins: {
     ...config.plugins,
-    tailwindcss: {},
-    autoprefixer: {},
+    "@tailwindcss/postcss": {},
   },
 };
+
+export default output;

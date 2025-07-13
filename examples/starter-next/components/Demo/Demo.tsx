@@ -1,4 +1,4 @@
-import { Container, View, Text, Button, MenuItem } from "reshaped";
+import { Container, View, Text, Button } from "reshaped";
 import s from "./Demo.module.css";
 
 const Demo = () => {
