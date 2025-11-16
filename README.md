@@ -5,7 +5,7 @@ This is a multi-purpose public repository for [Reshaped](https://reshaped.so).
 It contains [examples of the project setups](./examples/) using Reshaped together with different build tools and frameworks.
 We're working hard on making sure it works with the most possible amount of popular technologies while still following our principle of staying as close as possible to native browser technologies.
 
-Our future plans for the upcoming releases can be found in [our roadmap](https://github.com/orgs/formaat-design/projects/2/views/1).
+Our future plans for the upcoming releases can be found in [our roadmap](https://github.com/orgs/reshaped-ui/projects/2/views/1).
 
 ---
 
