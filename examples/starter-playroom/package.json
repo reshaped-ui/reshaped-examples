@@ -1,0 +1,27 @@
+{
+  "name": "starter-playroom",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "playroom start",
+    "build": "playroom build"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.6",
+    "@types/react-dom": "^19.2.3",
+    "css-loader": "^7.1.2",
+    "esbuild-loader": "^4.4.0",
+    "loader-utils": "^3.3.1",
+    "mini-css-extract-plugin": "^2.9.4",
+    "playroom": "^1.0.1",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^8.2.0",
+    "prettier": "^3.6.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "reshaped": "^3.8.8",
+    "typescript": "^5.9.3"
+  }
+}
