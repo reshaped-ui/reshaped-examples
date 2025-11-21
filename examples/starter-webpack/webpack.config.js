@@ -2,7 +2,7 @@
  * Comment out everything MiniCssExtractPlugin related for a prod css example
  */
 
-const path = require("path");
+const path = require("node:path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -11,7 +11,7 @@ module.exports = {
   entry: path.resolve(__dirname, "src/index.tsx"),
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name]-[hash].js",
+    filename: "[name]-[contenthash].js",
   },
   resolve: {
     modules: ["node_modules"],
@@ -38,8 +38,24 @@ module.exports = {
               esModule: false,
             },
           },
-          "css-loader",
-          "postcss-loader",
+          {
+            loader: "css-loader", 
+            options: {
+              modules: {
+                // Let Webpack determine whether it's a CSS module based on filename convention.
+                // *.module.css --> mode: local
+                // *.css --> mode: global
+                auto: true,
+                // This block ensure css-loader < 7.x behaviour.
+                // Default exports, no identifiers rewrite.
+                namedExport: false,
+                exportLocalsConvention: 'as-is',              
+              },
+            },
+          },
+          {
+            loader: "postcss-loader"
+          },
         ],
       },
       {
